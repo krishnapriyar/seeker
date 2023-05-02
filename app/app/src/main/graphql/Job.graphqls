@@ -1,0 +1,9 @@
+type Job {
+    _id: String
+    positionTitle: String
+    description: String
+    salaryRange: SalaryRange
+    location: Int
+    industry: Int
+    haveIApplied: Boolean
+}

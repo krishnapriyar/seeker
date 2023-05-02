@@ -1,0 +1,7 @@
+type GetJobsResponse {
+    page: Int
+    size: Int
+    hasNext: Boolean
+    total: Int
+    jobs: [Job]
+}

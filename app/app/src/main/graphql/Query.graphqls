@@ -1,0 +1,13 @@
+type Query {
+# Arguments
+# limit: [Not documented]
+# page: [Not documented]
+active(limit: Int, page: Int): GetJobsResponse
+# Arguments
+# id: [Not documented]
+job(id: String!): Job
+# Arguments
+# limit: [Not documented]
+# page: [Not documented]
+jobs(limit: Int, page: Int): GetJobsResponse
+}

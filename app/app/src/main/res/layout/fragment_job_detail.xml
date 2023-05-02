@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.job.JobDetailFragment">
+
+    <TextView
+        android:id="@+id/text_job_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Job Title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/item_general_margin"
+        android:layout_marginStart="@dimen/item_general_margin"
+        android:layout_marginEnd="@dimen/item_general_margin"
+        style="@style/style_headline_7"
+        />
+
+    <TextView
+        android:id="@+id/text_company_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Company Name"
+        app:layout_constraintTop_toBottomOf="@id/text_job_title"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/item_general_margin"
+        android:layout_marginStart="@dimen/item_general_margin"
+        style="@style/style_body_2"
+       />
+
+    <TextView
+        android:id="@+id/dot_separator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" · "
+        app:layout_constraintTop_toBottomOf="@id/text_job_title"
+        app:layout_constraintStart_toEndOf="@id/text_company_name"
+        android:layout_marginTop="@dimen/item_general_margin"
+        style="@style/style_body_2"
+/>
+
+    <TextView
+        android:id="@+id/text_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        app:layout_constraintTop_toBottomOf="@id/text_job_title"
+        app:layout_constraintStart_toEndOf="@id/dot_separator"
+        android:layout_marginTop="@dimen/item_general_margin"
+        android:layout_marginEnd="@dimen/item_general_margin"
+        style="@style/style_body_2"/>
+
+    <TextView
+        android:id="@+id/text_job_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_company_name"
+        android:layout_marginTop="@dimen/item_general_margin"
+        android:layout_marginStart="@dimen/item_general_margin"
+        android:layout_marginEnd="@dimen/item_general_margin"
+        style="@style/style_body_2"/>
+
+    <Button
+        android:id="@+id/button_apply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="@dimen/item_general_margin"
+        android:layout_marginEnd="@dimen/item_general_margin"
+        android:layout_marginBottom="@dimen/item_general_margin_big"
+        android:text="@string/apply"
+        android:textColor="@color/textReversed"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

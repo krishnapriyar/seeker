@@ -1,0 +1,3 @@
+mutation Apply($id: String!){
+    apply(jobId : $id)
+}

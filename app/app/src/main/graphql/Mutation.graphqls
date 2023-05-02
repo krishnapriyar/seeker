@@ -1,0 +1,9 @@
+type Mutation {
+# Arguments
+# username: [Not documented]
+# password: [Not documented]
+auth(username: String!, password: String!): String
+# Arguments
+# jobId: [Not documented]
+apply(jobId: String!): Boolean
+}

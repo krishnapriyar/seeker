@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/loginFragment">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.seeker.seeker.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_jobDetailFragment"
+            app:destination="@id/jobDetailFragment"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_applications"
+        android:name="com.seeker.seeker.ui.applications.ApplicationsFragment"
+        android:label="@string/title_applications"
+        tools:layout="@layout/fragment_applications" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.seeker.seeker.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_navigation_profile_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.seeker.seeker.ui.login.LoginFragment"
+        android:label="@string/title_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/jobDetailFragment"
+        android:name="com.seeker.seeker.ui.job.JobDetailFragment"
+        android:label="@string/job_details"
+        tools:layout="@layout/fragment_job_detail" />
+</navigation>

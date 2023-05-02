@@ -1,0 +1,4 @@
+type SalaryRange {
+    min: Int
+    max: Int
+}

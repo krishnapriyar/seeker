@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Seeker</string>
+    <string name="title_home">Home</string>
+    <string name="title_applications">My Applications</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_login">Login</string>
+    <string name="home_title_jobs">Jobs</string>
+    <string name="job_item_title_job">Job Title</string>
+    <string name="job_item_company_name">Company Name</string>
+    <string name="job_item_job_description">This is a very brief description of the role\'s day-to-day responsibilities.</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Log In</string>
+    <string name="action_sign_in_short">Log in</string>
+    <string name="login_failed">Login failed. Please try again.</string>
+    <string name="logout">Log Out</string>
+    <string name="logout_success">You have been logged out..</string>
+    <string name="applied_on">Applied On: %s</string>
+    <string name="applied">Applied</string>
+    <string name="apply">Apply</string>
+    <string name="job_details">Job Details</string>
+    <!-- Strings related to login -->
+</resources>
