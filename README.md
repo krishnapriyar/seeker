@@ -5,8 +5,11 @@ App developed for Seek Interview
 ## Issues
 **The provided backend is not able to be run on my machine (Mac OS Monterey, Apple Silicon) therefore it has impeded the proper development of a working end-to-end solution.**
 
+The error received is ``concurrently: command not found`` in the docker console.
 
-I have raised this issue twice. I have done my best to develop the UI using some mock data.
+I have tried a number of ways to resolve this but have been unsuccessful. 
+
+I have done my best to develop the UI using some mock data.
 
 ## Developed Features
 #### Login
